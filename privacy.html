@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy · Hive</title>
+<meta name="description" content="What Hive, a personal organizer, does with data from Google.">
+<style>
+  :root { --bg: #fbfaf7; --ink: #1d1d1f; --muted: #5a5a60; --line: #e2e0da; --link: #4f46b8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111114; --ink: #ececef; --muted: #a3a3ab; --line: #2a2a31; --link: #a8a2ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 40rem; margin: 0 auto; padding: 3.5rem 1rem 4rem; }
+  h1 { font-size: 2rem; letter-spacing: -0.02em; margin: 0 0 0.25rem; }
+  h2 { font-size: 1.1rem; margin: 2rem 0 0.5rem; }
+  p, ul { margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  .date, .back { color: var(--muted); }
+  .date { margin-bottom: 2rem; }
+  .back { border-top: 1px solid var(--line); padding-top: 1.1rem; margin-top: 2.5rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy · Hive</h1>
+  <p class="date">Last changed 21 October 2026</p>
+
+  <h2>Who this is about</h2>
+  <p>Hive runs only on my own laptop, and I'm its only user: the owner of the GitHub account
+     <a href="https://github.com/Zeldexy">Zeldexy</a>. There's no Hive server and no Hive account.</p>
+
+  <h2>What Hive gets from Google</h2>
+  <p>When I sign in, Google asks me for two permissions:</p>
+  <ul>
+    <li><strong>See and download any calendar you can access.</strong> Hive reads my calendars and their events to
+        show them next to my other dates. It changes none of them.</li>
+    <li><strong>Make secondary Google calendars, and see, create, change and delete events on them.</strong> Hive
+        makes its own calendars ("Hive · Lectures", "Hive · Deadlines", "Hive · Study", "Hive · Other") and keeps
+        the events I accept there. It can't touch my other calendars.</li>
+  </ul>
+  <p>Hive asks for nothing else: not my contacts, mail, files or profile.</p>
+
+  <h2>Where the data stays</h2>
+  <ul>
+    <li>Calendar data is kept in Hive's database on my laptop.</li>
+    <li>The sign-in token Google gives Hive is kept in Windows Credential Manager on my laptop, never in a file.</li>
+    <li>A backup of Hive's database goes to a private GitHub repository that only I can see.</li>
+    <li>Hive sends Google data to no one else: no servers, no advertising, no analytics, no selling. It isn't used to
+        train AI models.</li>
+    <li>When I ask an AI coding assistant to help me with Hive on my laptop, it can see the data there while it
+        helps, like any file I open with it.</li>
+  </ul>
+
+  <h2>Stopping and deleting</h2>
+  <ul>
+    <li>I can delete Hive's data at any time.</li>
+    <li>To end Hive's access: <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>,
+        then Hive, then "Delete all connections". Hive's own <code>sign-out</code> command does the same.</li>
+    <li>Hive's calendars can be deleted in Google Calendar's settings.</li>
+  </ul>
+
+  <h2>Google's rules</h2>
+  <p>Hive's use and transfer of information received from Google APIs adheres to the
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+     Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Contact</h2>
+  <p>Through GitHub: <a href="https://github.com/Zeldexy">github.com/Zeldexy</a>.</p>
+
+  <p class="back"><a href="./">← Hive</a></p>
+</main>
+</body>
+</html>
