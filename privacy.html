@@ -28,14 +28,14 @@
 <body>
 <main>
   <h1>Privacy policy · Hive</h1>
-  <p class="date">Last changed 21 October 2026</p>
+  <p class="date">Last changed 23 October 2026 (Gmail)</p>
 
   <h2>Who this is about</h2>
   <p>Hive runs only on my own laptop, and I'm its only user: the owner of the GitHub account
      <a href="https://github.com/Zeldexy">Zeldexy</a>. There's no Hive server and no Hive account.</p>
 
   <h2>What Hive gets from Google</h2>
-  <p>When I sign in, Google asks me for three permissions:</p>
+  <p>When I sign in, Google asks me for four permissions:</p>
   <ul>
     <li><strong>See and download any calendar you can access.</strong> Hive reads my calendars and their events to
         show them next to my other dates.</li>
@@ -44,16 +44,32 @@
     <li><strong>See, create, change, and delete events on Google calendars you own.</strong> When I change one of my
         own Google events in Hive (its name, time, place or details), Hive makes the same change in Google. It doesn't
         add or delete events in my own calendars, and it never changes calendars that others share with me.</li>
+    <li><strong>Read all resources and their metadata – no write operations (Gmail, read only).</strong> Hive looks
+        for dates in my mail: invitations, meeting times and deadlines become proposals that I accept or decline.
+        <ul>
+          <li>Of every message, Hive reads only the sender, subject and date, to show me who writes to me.</li>
+          <li>It reads a message in full only when its sender is on a list I keep myself (my university, people I
+              choose). Mail from anyone else is never read beyond those headers.</li>
+          <li>A calendar invite attached to such a message is read on my laptop.</li>
+          <li>The other messages from senders on my list are sent to Claude, Anthropic's AI model, which I use under
+              my own Claude account, to find the dates in them. It sees the whole message. Model training on my
+              chats is turned off in that account.</li>
+          <li>Hive never sends, deletes, labels or changes mail.</li>
+        </ul>
+    </li>
   </ul>
-  <p>Hive asks for nothing else: not my contacts, mail, files or profile.</p>
+  <p>Hive asks for nothing else: not my contacts, files or profile.</p>
 
   <h2>Where the data stays</h2>
   <ul>
     <li>Calendar data is kept in Hive's database on my laptop.</li>
+    <li>From Gmail, Hive keeps only what it found (an event, with the sentence it came from and a link to the message)
+        and a log of which messages it checked (sender, subject, date, what became of it). It doesn't keep the
+        messages' text, and the log stays on my laptop.</li>
     <li>The sign-in token Google gives Hive is kept in Windows Credential Manager on my laptop, never in a file.</li>
     <li>A backup of Hive's database goes to a private GitHub repository that only I can see.</li>
-    <li>Hive sends Google data to no one else: no servers, no advertising, no analytics, no selling. It isn't used to
-        train AI models.</li>
+    <li>Hive sends Google data to no one else, apart from the messages sent to Claude to find dates in them (above):
+        no servers, no advertising, no analytics, no selling. It isn't used to train AI models.</li>
     <li>When I ask an AI coding assistant to help me with Hive on my laptop, it can see the data there while it
         helps, like any file I open with it.</li>
   </ul>
