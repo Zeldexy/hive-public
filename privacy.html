@@ -28,7 +28,7 @@
 <body>
 <main>
   <h1>Privacy policy · Hive</h1>
-  <p class="date">Last changed 23 October 2026 (Gmail)</p>
+  <p class="date">Last changed 27 October 2026 (WhatsApp chats mailed to myself)</p>
 
   <h2>Who this is about</h2>
   <p>Hive runs only on my own laptop, and I'm its only user: the owner of the GitHub account
@@ -54,6 +54,10 @@
           <li>The other messages from senders on my list are sent to Claude, Anthropic's AI model, which I use under
               my own Claude account, to find the dates in them. It sees the whole message. Model training on my
               chats is turned off in that account.</li>
+          <li>Hive also reads mail that I send myself to my own Hive address (a plus-address of my Gmail), and only
+              mail that I sent. Such a mail can hold a WhatsApp chat that I exported by hand on my phone and mailed
+              to myself, or a message I pasted into it. Hive never contacts WhatsApp. The new lines of that chat
+              are sent to Claude, as above, to find the dates in them, and only the dates found are kept.</li>
           <li>Hive never sends, deletes, labels or changes mail.</li>
         </ul>
     </li>
@@ -66,6 +70,9 @@
     <li>From Gmail, Hive keeps only what it found (an event, with the sentence it came from and a link to the message)
         and a log of which messages it checked (sender, subject, date, what became of it). It doesn't keep the
         messages' text, and the log stays on my laptop.</li>
+    <li>From an exported WhatsApp chat, Hive keeps only the date it found, the sentence it came from, the chat's name
+        and who wrote it, and a log of which exports it read (chat name, how many lines, from when to when). It
+        doesn't keep the chat's text. The mail with the export stays in my Gmail until I delete it.</li>
     <li>The sign-in token Google gives Hive is kept in Windows Credential Manager on my laptop, never in a file.</li>
     <li>A backup of Hive's database goes to a private GitHub repository that only I can see.</li>
     <li>Hive sends Google data to no one else, apart from the messages sent to Claude to find dates in them (above):
